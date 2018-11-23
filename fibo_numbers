@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int n, one = 0, two = 1, next, s;
+  printf("Enter the number of terms\n");
+  scanf("%d", &n);
+  printf("First %d terms of Fibonacci series are:\n", n);
+ while(n--)
+ { 
+   next=one+two;
+   printf("%d",next);
+   one=two;
+   two=next;
+ }
+  return 0;
+}
